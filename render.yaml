@@ -15,6 +15,6 @@ services:
       - key: N8N_HOST
         value: "0.0.0.0"
       - key: N8N_PORT
-        value: "5678"
+        value: "${PORT}"
       - key: WEBHOOK_URL
         value: "https://n8n-c8ab.onrender.com/"
