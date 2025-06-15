@@ -2,6 +2,40 @@ services:
   - type: web
     name: n8n
     env: docker
+    repo: https://github.com/yourusername/n8n
+    branch: master
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: DB_TYPE
+        value: "postgresdb"
+      - key: DB_POSTGRESDB_HOST
+        value: "dpg-d1785codl3ps73a58h0g-a"
+      - key: DB_POSTGRESDB_PORT
+        value: 5432
+      - key: DB_POSTGRESDB_DATABASE
+        value: "mydatabasen8npostgresql"
+      - key: DB_POSTGRESDB_USER
+        value: "mydatabasen8npostgresql_user"
+      - key: DB_POSTGRESDB_PASSWORD
+        value: "DnMJ56lfUgO5hoIFvIy6TJHDiu3yfT9B"
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: "admin"
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: "k!ZUoqHey@Rohit$Password"
+      - key: N8N_HOST
+        value: 0.0.0.0
+			- key: N8N_PORT
+        value: "${PORT}"
+      - key: WEBHOOK_URL
+        value: "https://n8n-c8ab.onrender.com/"
+
+
+services:
+  - type: web
+    name: n8n
+    env: docker
     dockerfilePath: Dockerfile
     plan: free
     autoDeploy: true
@@ -18,3 +52,4 @@ services:
         value: "${PORT}"
       - key: WEBHOOK_URL
         value: "https://n8n-c8ab.onrender.com/"
+
