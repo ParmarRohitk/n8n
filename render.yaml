@@ -30,26 +30,4 @@ services:
         value: "${PORT}"
       - key: WEBHOOK_URL
         value: "https://n8n-c8ab.onrender.com/"
-
-
-services:
-  - type: web
-    name: n8n
-    env: docker
-    dockerfilePath: Dockerfile
-    plan: free
-    autoDeploy: true
-    envVars:
-      - key: N8N_BASIC_AUTH_ACTIVE
-        value: "true"
-      - key: N8N_BASIC_AUTH_USER
-        value: "admin"
-      - key: N8N_BASIC_AUTH_PASSWORD
-        value: "k!ZUoqHey@Rohit$Password"
-      - key: N8N_HOST
-        value: "0.0.0.0"
-      - key: N8N_PORT
-        value: "${PORT}"
-      - key: WEBHOOK_URL
-        value: "https://n8n-c8ab.onrender.com/"
-
+				
