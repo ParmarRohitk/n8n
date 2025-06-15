@@ -13,11 +13,11 @@ services:
       - key: DB_POSTGRESDB_PORT
         value: 5432
       - key: DB_POSTGRESDB_DATABASE
-        value: "mydatabasen8npostgresql"
+        value: mydatabasen8npostgresql
       - key: DB_POSTGRESDB_USER
-        value: "mydatabasen8npostgresql_user"
+        value: mydatabasen8npostgresql_user
       - key: DB_POSTGRESDB_PASSWORD
-        value: "DnMJ56lfUgO5hoIFvIy6TJHDiu3yfT9B"
+        value: DnMJ56lfUgO5hoIFvIy6TJHDiu3yfT9B
       - key: N8N_BASIC_AUTH_ACTIVE
         value: "true"
       - key: N8N_BASIC_AUTH_USER
@@ -27,7 +27,7 @@ services:
       - key: N8N_HOST
         value: 0.0.0.0
 			- key: N8N_PORT
-        value: "${PORT}"
+        value: "5678"
       - key: WEBHOOK_URL
         value: "https://n8n-c8ab.onrender.com/"
 				
